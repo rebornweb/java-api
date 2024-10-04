@@ -41,3 +41,47 @@ Start Front-end localhost:3000:
 cd cheeses-app
 npm run start
 
+
+## Documentation
+
+Use GitHub Actions with Docker to set up an Azure Web App Service and configure a workflow in both Azure and GitHub. 
+
+  
+
+Utilize VSCode with the Java IntelliSense extension. 
+
+ Java: 
+
+  
+
+- Spring Boot 
+
+- Maven 
+
+- Official documentation and Spring guides. 
+
+  
+
+I could have manually initialized the project, but I wanted to dive straight into the REST service boilerplate, similar to how I would in .NET Core with Visual Studio API. 
+
+  
+
+Use Jackson as a dependency for handling JSON data. 
+
+  
+
+**Unit Tests:** 
+
+  
+- Jest 
+
+- JUnit 
+
+  
+
+**What I Would Do If I Had More Time:** 
+
+  
+Create a `CheeseContext` to wrap around the necessary components.  
+- I would also fix the module issues I had when running Jest tests.
+
