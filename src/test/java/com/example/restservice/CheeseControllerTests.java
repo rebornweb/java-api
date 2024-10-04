@@ -32,7 +32,6 @@ public class CheeseControllerTests {
     public void setUp() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         File jsonFile = new File("src/test/resources/cheeseTestData.json");
-        // Read the JSON data into a list of Cheese objects
         testData = List.of(objectMapper.readValue(jsonFile, Cheese[].class));
     }
 
@@ -44,7 +43,15 @@ public class CheeseControllerTests {
                 .andExpect(jsonPath("$[0].content").value(testData.get(0).content()))
                 .andExpect(jsonPath("$[0].imageUrl").value(testData.get(0).imageUrl()))
                 .andExpect(jsonPath("$[1].content").value(testData.get(1).content()))
-                .andExpect(jsonPath("$[1].imageUrl").value(testData.get(1).imageUrl()));
+                .andExpect(jsonPath("$[1].imageUrl").value(testData.get(1).imageUrl()))
+                .andExpect(jsonPath("$[2].content").value(testData.get(2).content()))
+                .andExpect(jsonPath("$[2].imageUrl").value(testData.get(2).imageUrl()))
+                .andExpect(jsonPath("$[3].content").value(testData.get(3).content()))
+                .andExpect(jsonPath("$[3].imageUrl").value(testData.get(3).imageUrl()))
+                .andExpect(jsonPath("$[4].content").value(testData.get(4).content()))
+                .andExpect(jsonPath("$[4].imageUrl").value(testData.get(4).imageUrl()));
+                
+                
     }
 
     @Test
@@ -54,6 +61,12 @@ public class CheeseControllerTests {
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$[0].content").value("Brie"))
-                .andExpect(jsonPath("$[0].imageUrl").value("https://www.cheese.com/brie/"));
+                .andExpect(jsonPath("$[0].imageUrl").value("https://www.cheese.com/brie/"))
+                .andExpect(jsonPath("$[0].pricePerKilo").value(22.50))
+                .andExpect(jsonPath("$[0].color").value("White"))
+                .andExpect(jsonPath("$[0].countryOfOrigin").value("France"));
+
     }
 }
+
+
