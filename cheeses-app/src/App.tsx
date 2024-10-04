@@ -4,6 +4,7 @@ import CheeseList from './components/CheeseList';
 import Cart from './components/Cart';
 import { CartProvider } from './context/CartContext';
 import { Cheese } from './types/base'; 
+import './App.css';
 
 
 const theme = extendTheme({
