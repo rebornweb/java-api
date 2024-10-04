@@ -11,7 +11,7 @@
         {
             "id": 2,
             "content": "Brie",
-            "imageUrl": "https://www.cheese.com/brie/",
+            "imageUrl": "https://www.cheese.com/media/img/cheese-thumbs/-suggestion/Briefermier.jpg",
             "pricePerKilo": 22.50,
             "color": "White",
             "countryOfOrigin": "France"
@@ -35,7 +35,7 @@
         {
             "id": 5,
             "content": "Cheddar",
-            "imageUrl": "https://www.cheese.com/cheddar/",
+            "imageUrl": "https://www.cheese.com/media/img/cheese-thumbs/cheddar_large.jpg",
             "pricePerKilo": 12.00,
             "color": "Orange",
             "countryOfOrigin": "United Kingdom"

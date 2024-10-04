@@ -53,9 +53,24 @@ Thumbs.db
 *.ear
 
 # Coverage and test reports
-/coverage/
-/test-output/
-/jacoco.exec
+cheeses-app/coverage/
+cheeses-app/test-output/
+cheeses-appcheeses-app/jacoco.exec
 
 # Environment variables
 .env
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+**/node_modules
+/.pnp
+.pnp.js
+
+
+# testing
+cheeses-app/coverage
+
+# production
+cheeses-app/build
+
