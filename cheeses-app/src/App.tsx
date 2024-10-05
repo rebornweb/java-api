@@ -25,6 +25,7 @@ const theme = extendTheme({
 const App: React.FC = () => {
   const [cheeses, setCheeses] = useState<Cheese[]>([]);
   const logo = 'https://www.cheese.com/static/common/img/logo.3feae68fc57a.svg';
+  document.title = 'Cheese Shop';
 
   const fetchCheeseData = async () => {
     const response = await fetch('http://localhost:8080/cheese');
